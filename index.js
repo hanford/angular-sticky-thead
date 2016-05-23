@@ -64,7 +64,7 @@ function fixedHeader ($timeout) {
           var lastColumn = elem.querySelector('tbody tr:first-child td:last-child')
           lastColumn.style.width = (lastColumn.offsetWidth - scrollBarWidth) + 'px'
         }
-      }, 0)
+      }, $attrs.timeout || 0)
     }
   }
 }
